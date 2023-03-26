@@ -5,4 +5,5 @@ Project ideas, creation of designs and construction of the page made by **Beatri
 Currently available only in PT-BR
 
 **Github:** https://github.com/anbeatrizduarte
+
 **Instagram:** https://www.instagram.com/duartebibis_/
