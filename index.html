@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
+    <title>Health - Plano de Saúde</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'FonteSecun';
+        src: url(./src/font-text/Lato-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: 'FontePrincipal';
+        src: url(./src/font-text/NotoSans-Medium.ttf);
+    }
+</style>
+
+<body>
+
+    <header class="menu-principal" id="home">
+        <nav>
+            <img class="logo" src="./src/img/logo.png" alt="Logo do site Health">
+            <ul class="ul-menu">
+                <li class="menu"><a href="#home">Home</a></li>
+                <li class="menu"><a href="#">Sobre</a></li>
+                <li class="menu"><a href="#">Canais de Atendimento</a></li>
+                <li class="menu"><a href="#noticias">Noticias</a></li>
+            </ul>
+            <input type="search" id="iptBusca" placeholder="Faça sua pesquisa aqui">
+            <button type="button" class="bttMain" id="bttLogin">LOGIN</button>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="info">
+                <img class="texto-principal" src="./src/img/texto-principal.png"
+                    alt="Health - Imagem do nome da empresa">
+                <p class="paragrafosMain">Encontre especialistas capacitados para você e sua família</p2>
+            </div>
+
+            <img class="img-principal" src="./src/img/img-principal.png" alt="Imagem de um médico">
+        </div>
+    </main>
+
+    <div id="menu-acess" onclick="showAcess()">
+        <h1 id="text-ver">Acessibilidade</h1>
+        <div id="sidebar-acess">
+            <div class="libras">
+                <div vw class="enabled">
+                    <div vw-access-button class="active"></div>
+                    <div vw-plugin-wrapper>
+                        <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window.VLibras.Widget('https://vlibras.gov.br/app');
+                </script>
+            </div>
+            <div id="text-aum-dim">
+                <button class="bttAumDim" id="bttAum" onclick="aumFont()">A+</button>
+                <button class="bttAumDim" id="bttDim">A-</button>
+            </div>
+            <div class="light-dark">
+                <button class="bttLightDark" id="bttLight" onclick="modoLight()">Modo claro</button>
+                <button class="bttLightDark" id="bttDark" onclick="modoDark()">Modo escuro</button>
+            </div>
+
+            <div id="x-close">
+                <img id="imgx-close" src="./src/img/close.png" height="20px" ondblclick="ocultAcess()"
+                    alt="Botão fechar">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="consulta" id="consulta">
+        <h1 class="h1prin" id="t1">Consultas Médicas</h1>
+        <p class="paragrafosMain" id="p1">Cuide de quem você ama. <br>
+            Esteja sempre em dia com a sua saúde.</p>
+
+        <button type="button" class="bttMain" id="bttConvConsul">Consulte agora</button>
+    </div>
+
+    <hr>
+
+
+    <div class="abaCliEmp" id="abaCliEmp">
+        <h1 class="h1prin" id="h1AbaMain"><span>Serviços</span></h1>
+        <div class="abas" id="abaCli" onmousemove="mostrar()" onmouseout="ocultar()">
+            <h1 class="h1main">Cliente</h1>
+            <p class="paragrafosMain" id="p2">Descubra aqui os serviços que oferecemos para você como Cliente</p>
+            <div class="topicos" id="topicosCli">
+                <ul class="ulTopic">
+                    <li><a href="">Marcar consulta</a></li>
+                    <li><a href="">Especialistas disponíveis</a></li>
+                    <li><a href="">Guia médico</a></li>
+                    <li><a href="">Carteira Online</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="abas" id="abaEmp" onmousemove="mostrar2()" onmouseout="ocultar2()">
+            <h1 class="h1main">Empresa</h1>
+            <p class="paragrafosMain" id="p3">Descubra aqui os serviços que oferecemos para você como Empresa</p>
+            <div class="topicos" id="topicosEmp">
+                <ul class="ulTopic2">
+                    <li><a href="">Custo operacional</a></li>
+                    <li><a href="">Autenticar atestados</a></li>
+                    <li><a href="">Nota fiscal</a></li>
+                    <li><a href="">Reajuste de contratos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="blNoticias" id="noticias">
+        <h1 class="h1prin" id="t2">Notícias</h1>
+        <p class="paragrafosMain" id="p4">Fique por dentro das principais notícias da área da saúde.</p>
+        <div class="nots">
+            <div class="card-nots">
+                <a href="https://www.bbc.com/portuguese/articles/c0x932x48vwo">
+                    <img class="img-card-nots" src="./src/img/nots-img1.jpg" width="280px" alt="Imagem da noticia 1">
+                    <p class="paragrafosMain" id="p5">Qual o mínimo de exercícios <br> que precisamos fazer e ainda
+                        <br>assim
+                        melhorar a saúde?</p>
+                </a>
+            </div>
+            <div class="card-nots">
+                <a href="https://www.bbc.com/portuguese/articles/ckmd30dn5j2o">
+                    <img class="img-card-nots" src="./src/img/nots-img4.jpg" width="280px" alt="Imagem da noticia 2">
+                    <p class="paragrafosMain" id="p6">Comer comida queimada faz <br> mal à saúde?</p>
+                </a>
+            </div>
+            <div class="card-nots">
+                <a href="https://www.bbc.com/portuguese/articles/c1vxyvdy62ko">
+                    <img class="img-card-nots" src="./src/img/nots-img2.jpg" width="280px" alt="Imagem da noticia 3">
+                    <p class="paragrafosMain" id="p7">Infecção rara por ameba <br> comedora de cérebro mata <br> homem
+                        na
+                        Flórida</p>
+                </a>
+            </div>
+            <div class="card-nots">
+                <a href="https://www.bbc.com/portuguese/articles/cpvel2n965xo">
+                    <img class="img-card-nots" src="./src/img/nots-img5.jpg" width="280px" alt="Imagem da noticia 4">
+                    <p class="paragrafosMain" id="p8">O que é electroma,descoberta <br> que pode revolucionar
+                        <br>tratamento do
+                        câncer</p>
+                </a>
+            </div>
+            <div class="card-nots">
+                <a href="https://www.bbc.com/portuguese/articles/ce93qe3nqlmo">
+                    <img class="img-card-nots" src="./src/img/nots-img3.jpg" width="280px" alt="Imagem da noticia 5">
+                    <p class="paragrafosMain" id="p9">As bactérias que controlam seu <br> cérebro</p>
+                </a>
+            </div>
+            <div class="card-nots">
+                <a href="https://www.bbc.com/portuguese/articles/cxx79170863o">
+                    <img class="img-card-nots" src="./src/img/nots-img6.jpg" width="280px" alt="Imagem da noticia 6">
+                    <p class="paragrafosMain" id="p10">'Temos 7 sentidos - e os 5 mais <br> conhecidos são os menos
+                        <br>importantes'
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-main" id="footer-main">
+        <h1 class="h1prin" id="t3">Health</h1>
+        <ul class="ul-footer">
+            <li><a href="#home" id="fo1">Home</a></li>
+            <li><a href="#consulta" id="fo2">Canais de atendimento</a></li>
+            <li><a href="#abaCliEmp" id="fo3">Serviços</a></li>
+            <li><a href="#noticias" id="fo4">Noticias</a></li>
+        </ul>
+        <div class="imgs-footer">
+            <a href="https://github.com/anbeatrizduarte"><img id="foimg1" src="./src/img/github-logo-js.png"
+                    height="40px" alt="Logo do Github"></a>
+            <a href="https://www.instagram.com/duartebibis_/"><img id="foimg2" src="./src/img/instagram.png"
+                    height="40px" alt="Logo do Instagram"></a>
+        </div>
+        <p class="paragrafosMain" id="p11">Copyright 2022 © - Beatriz Duarte</p>
+    </div>
+
+
+
+</body>
+
+</html>
