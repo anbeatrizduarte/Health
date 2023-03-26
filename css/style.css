@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    box-shadow: 0px 2px 10px #68a797;
+    background-color: #68a797;
+    position: relative;
+
+}
+
+
+.logo {
+    height: 70px;
+    padding-left: 100px;
+    padding-top: 10px;
+    float: left;
+}
+
+.ul-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 35px;
+    position: relative;
+}
+
+.ul-menu ul li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-family: 'FontePrincipal';
+}
+
+#iptBusca {
+    height: 35px;
+    width: 250px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 180px;
+    border: none;
+    border-radius: 50px;
+    background-image: url(../src/img/iptBusca.png);
+    background-size: 22px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 13px 40px 14px;
+    outline: 0;
+    transition: 0.4s all ease-in;
+}
+
+#iptBusca::placeholder {
+    color: #68a797;
+}
+
+#iptBusca:hover {
+
+    transform: scale(1.01);
+}
+
+.bttMain {
+    width: 105px;
+    height: 40px;
+    margin: 22px 40px 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s all ease-out;
+    box-shadow: 0px 2px 10px #3c495891;
+    background-color: #506175;
+}
+
+#bttLogin {
+
+    background-image: url(../src/img/login.png);
+    background-size: 19px;
+    background-position: 10px 11px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+
+
+.bttMain:hover {
+    background-color: #36414e;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 450px;
+    padding: 0 100px 30px;
+    background-image: url(../src/img/background-main.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-principal {
+    height: 350px;
+    margin: 0px 189px;
+    box-shadow: 3px 2px 10px #506175;
+    border-radius: 200px;
+    margin-top: 100px;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.img-principal:hover {
+    transform: scale(1.03);
+
+}
+
+.texto-principal {
+    height: 200px;
+}
+
+.paragrafosMain {
+    color: #506175;
+    font-family: 'FonteSecun';
+    text-align: center;
+    font-size: 25px;
+}
+
+.consulta p {
+    font-size: inherit !important;
+}
+
+.abaCliEmp p {
+    font-size: inherit !important;
+}
+
+.consulta {
+    max-width: 1366px;
+    height: 300px;
+    text-align: center;
+    background-image: url(../src/img/background-1.png);
+}
+
+.h1prin {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    color: #506175;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'FontePrincipal';
+}
+
+.abaCliEmp {
+    max-width: 1366px;
+    height: 325px;
+    background-color: #ecf3f1;
+    box-shadow: 0px 8px 15px #50617571;
+}
+
+.h1main {
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.abas {
+    padding-top: 20px;
+    float: left;
+    width: 49.75%;
+    text-align: center;
+    color: #68a797;
+    transition: 0.2s all ease-in-out;
+}
+
+.abas:hover {
+    background-color: #68a797;
+    color: white;
+    transform: scale(1.02);
+}
+
+#bttTeste {
+    width: 105px;
+    height: 40px;
+    margin: 22px 40px 20px;
+}
+
+.topicos {
+    background-color: #76BFAC;
+    width: 672;
+    height: 100px;
+    visibility: hidden;
+    color: white;
+}
+
+
+.topicos li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    width: 50%;
+    list-style: none;
+}
+
+.topicos li a {
+    color: white;
+}
+
+.topicos li:hover {
+    background-color: #82d1bc;
+}
+
+.abaCliEmp p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.blNoticias {
+    width: 1340px;
+    height: 1000px;
+}
+
+.card-nots {
+
+    float: left;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.card-nots:hover {
+    opacity: 0.7;
+}
+
+.card-nots a {
+    text-decoration: none;
+}
+
+.card-nots p {
+    text-align: left;
+    font-size: 20px;
+    border-left: 2px solid #76BFAC;
+    padding-left: 10px;
+}
+
+.card-nots img {
+    border-radius: 10px;
+}
+
+.footer-main {
+    height: 350px;
+    text-align: left;
+    padding-left: 30px;
+    background-color: #ecf3f1;
+    border-top: 7px solid #68a797;
+    padding-bottom: 20px;
+}
+
+.footer-main h1 {
+    text-align: center;
+}
+
+.ul-footer li {
+    list-style: none;
+    margin-bottom: 17px;
+    padding-left: 20px;
+    font-family: 'FonteSecun';
+}
+
+.ul-footer li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    text-align: left;
+    color: #506175;
+}
+
+.imgs-footer {
+    height: 40px;
+    padding-left: 20px;
+}
+
+#menu-acess {
+    height: 215px;
+    width: 70px;
+    top: 30%;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: #506175;
+    border-bottom-left-radius: 30px 30px;
+    border-top-left-radius: 30px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-acess:hover {
+    background-color: #485566;
+}
+
+#text-ver {
+    transform: rotate(-270deg);
+    margin-top: 27px;
+}
+
+#sidebar-acess {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    visibility: hidden;
+}
+
+.enabled {
+    padding-top: 30px;
+    padding-right: 25px;
+
+}
+
+#text-aum-dim {
+    float: right;
+    width: 20px;
+    padding-left: 40px;
+}
+
+.bttAumDim {
+    height: 20px;
+    width: 30px;
+    margin-top: 10px;
+    background-color: #68a797;
+    border-radius: 30px;
+    border: 1px outset rgb(255, 255, 255);
+    box-shadow: 0 1px 10px 2px #36414ea8;
+    cursor: pointer;
+}
+
+.bttAumDim:hover {
+    background-color: #5e9789;
+}
+
+#imgx-close {
+    margin-top: 40px;
+    float: right;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.bttLightDark {
+    height: 40px;
+    width: 45px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: #68a797;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 2px #36414ea8;
+    border: 1px outset rgb(255, 255, 255);
+}
