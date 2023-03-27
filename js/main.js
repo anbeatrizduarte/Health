@@ -26,7 +26,7 @@ function showAcess() {
   var sidebar = document.getElementById("sidebar-acess");
   var textver = document.getElementById("text-ver");
   menuacess.style.height = '300px'
-  menuacess.style.width = '100px'
+  menuacess.style.width = '90px'
   menuacess.style.transition = '0.4s all ease'
   sidebar.style.visibility = 'visible';
   sidebar.style.width = '100px';
@@ -38,8 +38,8 @@ function ocultAcess() {
   var sidebar = document.getElementById("sidebar-acess");
   var textver = document.getElementById("text-ver");
   sidebar.style.visibility = 'hidden';
-  menuacess.style.height = '215px'
-  menuacess.style.width = '70px'
+  menuacess.style.height = '190px'
+  menuacess.style.width = '40px'
   textver.style.visibility = 'visible'
 };
 
