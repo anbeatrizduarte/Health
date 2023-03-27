@@ -159,7 +159,7 @@ header {
 
 .abaCliEmp {
     max-width: 1366px;
-    height: 325px;
+    height: 333px;
     background-color: #ecf3f1;
     box-shadow: 0px 8px 15px #50617571;
 }
@@ -340,7 +340,7 @@ header {
     cursor: pointer;
 }
 
-.bttAumDim:hover {
+.bttAumDim:hover, .bttLightDark:hover {
     background-color: #5e9789;
 }
 
