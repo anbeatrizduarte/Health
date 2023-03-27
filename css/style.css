@@ -288,8 +288,8 @@ header {
 }
 
 #menu-acess {
-    height: 215px;
-    width: 70px;
+    height: 190px;
+    width: 40px;
     top: 30%;
     right: 0;
     position: fixed;
@@ -307,7 +307,8 @@ header {
 
 #text-ver {
     transform: rotate(-270deg);
-    margin-top: 27px;
+    margin-top: 26px;
+    font-size: 25px;
 }
 
 #sidebar-acess {
